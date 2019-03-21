@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-pushd swig
+pushd swig > /dev/null
 
-virtualenv -p python3.5 venv
+virtualenv -q -p python3.5 venv
 source ${PWD}/venv/bin/activate
 
 swig -c++ -python swig_example.i
@@ -13,3 +13,7 @@ python benchmarks.py
 
 deactivate
 rm -rf venv
+
+git clean -qdfx
+
+popd > /dev/null
