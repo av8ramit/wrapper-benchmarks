@@ -9,3 +9,6 @@ print (timeit.timeit('lib.no_op_return()', setup="from cppmodule import ffi, lib
 
 print ("Testing an add")
 print (timeit.timeit('lib.add(1, 2)', setup="from cppmodule import ffi, lib", number=100000))
+
+print ("Testing is prime")
+print (timeit.timeit('lib.is_prime(1234231)', setup="from cppmodule import ffi, lib", number=100))

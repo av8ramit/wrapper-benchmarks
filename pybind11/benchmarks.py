@@ -9,3 +9,6 @@ print (timeit.timeit('pybind11_example.no_op_return()', setup="import pybind11_e
 
 print ("Testing an add")
 print (timeit.timeit('pybind11_example.add(1, 2)', setup="import pybind11_example", number=100000))
+
+print ("Testing is prime")
+print (timeit.timeit('pybind11_example.is_prime(1234231)', setup="import pybind11_example", number=100))
