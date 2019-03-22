@@ -7,6 +7,8 @@ source ${PWD}/venv/bin/activate
 
 pip -q install cffi
 
+python cffi_example.py > /dev/null
+
 python benchmarks.py
 
 deactivate

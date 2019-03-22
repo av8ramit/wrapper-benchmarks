@@ -4,3 +4,5 @@
 echo
 ./pybind11/benchmarks.sh
 echo
+./cffi/benchmarks.sh
+echo
