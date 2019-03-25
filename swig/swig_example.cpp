@@ -1,5 +1,4 @@
 #include "swig_example.h"
-#include <vector>
 
 void no_op() {
 }
